@@ -14,51 +14,114 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Bootstrap Theme</title>
     </head>
-<body>
 
+    
 <div class="container">
     <header id="main-header" class="bg-dark">
         <div class="row no-gutters">
             <div class="col-md-5 col-lg-4">
                 <img src="img/person1.jpg" alt="">
             </div>
-            <div class="col-md-7 col-lg-8">
-                <div class="d-flex flex-column text-white">
-                    <div class="d-flex flex-row p-4 justify-content-around align-items-center">
-                        <h2 class="display-4">John Doe</h2>
-                        <div>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                        <div>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                        </div>
-                        <div>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                        <div>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
+            <div class="col-md-7 col-lg-8 text-white">
+                <div class="d-flex flex-column">
+                    
+                    <div class="d-flex flex-row justify-content-around align-items-center p-4">
+                        <h1>John Doe</h1>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope-square"></i></a>
                     </div>
-                    <div class="bg-white text-dark">
-                        <h1 class="p-3">Web Developer</h1>
-                    </div>
+                    
+                    <div class="bg-white h2 text-primary p-5">Web Developer</div>
                     <div>
-                        <div class="d-flex flex-row text-center">
-                            <div class="port-form bg-warning p-5 flex-fill" data-toggle="collapse" data-target="#collapseHome" aria-expanded="false" aria-controls="collapseHome">
+                        <div class="d-flex flex-row align-items-stretch">
+                            <div class="port-form bg-primary p-5 text-center" data-toggle="collapse" data-target="#home">
                                 <i class="fas fa-home fa-2x d-block"></i>
-                                <span class="h4">Home</span>
+                                <span class="d-none d-sm-block">Home</span>
                             </div>
-                            <div class="port-form bg-primary p-5 flex-fill" data-toggle="collapse" data-target="#collapseResume" aria-expanded="false" aria-controls="collapseResume">
-                                <i class="fas fa-file fa-2x d-block"></i>
-                                <span class="h4">Resume</span>
-                            </div>
-                            <div class="port-form bg-success p-5 flex-fill" data-toggle="collapse" data-target="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
+                            <div class="port-form bg-warning p-5 text-center" data-toggle="collapse" data-target="#work">
                                 <i class="fas fa-briefcase fa-2x d-block"></i>
-                                <span class="h4">Work</span>
+                                <span class="d-none d-sm-block">Work</span>
                             </div>
-                            <div class="port-form bg-danger p-5 flex-fill" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
-                                <i class="far fa-id-card fa-2x d-block"></i>
-                                <span class="h4">Contact</span>
+                            <div class="port-form bg-success p-5 text-center" data-toggle="collapse" data-target="#resume">
+                                <i class="fas fa-file fa-2x d-block"></i>
+                                <span class="d-none d-sm-block">Resume</span>
+                            </div>
+                            <div class="port-form bg-danger p-5 text-center" data-toggle="collapse" data-target="#contact">
+                                <i class="fas fa-address-card fa-2x d-block"></i>
+                                <span class="d-none d-sm-block">Contact</span>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!--Home-->
+        <div class="text-white h2 p-5 bg-primary collapse show" id="home">
+            <div>
+                <p class="h1">Hello</p> 
+                <div class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, expedita.</div>
+            </div>
+            <hr>
+            <div class="bg-white rounded text-primary p-3">
+                <h2 class="mb-5">My Skill</h2>
+                <h4>HTML</h4>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 100%; height: 8px;">
+                    </div>
+                </div>
+                <h4>CSS</h4>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 100%; height: 8px;">
+                    </div>
+                </div>
+                <h4>Javascript</h4>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%; height: 8px;">
+                    </div>
+                </div>
+                <h4>Node.js</h4>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 80%; height: 8px;">
+                    </div>
+                </div>
+                <h4>Python</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 70%; height: 8px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--work-->
+        <div class="text-white h2 p-5 bg-warning collapse" id="work">
+            <div>
+                <p class="h1">My Work</p> 
+                <div class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, expedita.</div>
+            </div>
+            <hr>
+            <div>
+                <div class="card card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://unsplash.it/1200/768.jpg?image=192" data-toggle="lightbox">
+                                    <img src="https://unsplash.it/600.jpg?image=192" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://unsplash.it/1200/768.jpg?image=212" data-toggle="lightbox">
+                                    <img src="https://unsplash.it/600.jpg?image=212" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://unsplash.it/1200/768.jpg?image=198" data-toggle="lightbox">
+                                    <img src="https://unsplash.it/600.jpg?image=198" class="img-fluid">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -66,190 +129,88 @@
                 </div>
             </div>
         </div>
-    </header>
 
-    <!--Home-->
-    <div id="collapseHome" class="collapse show bg-warning p-4 ">
-        <div class="card card-body bg-dark text-white mb-5">
-            <h2>Welcome!</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, libero?</p>
-        </div>
-        <div class="card card-body p-4">
-            <h2>My Skill</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, repellendus.</p>
+        <!--resume-->
+        <div class="text-white h2 p-5 bg-success collapse" id="resume">
+            <div>
+                <p class="h1">My Resume</p> 
+                <div class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, expedita.</div>
+            </div>
             <hr>
-            <div>
-                <p class="h4 mt-3">HTML</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%;"></div>
+            <div class="card-deck text-primary">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore?</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <p class="h4 mt-3">CSS</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div>
-                <p class="h4 mt-3">Javascript</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;"></div>
-                </div>
-            </div>    
-            <div>
-                <p class="h4 mt-3">Node.js</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;"></div>
-                </div>
-            </div>
-            <div>
-                <p class="h4 mt-3">SQL</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 70%;"></div>
-                </div>
-            </div>
-            <div>
-                <p class="h4 mt-3">Python</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 60%;"></div>
-                </div>
-            </div>
-        </div>    
-    </div>
-    
-    <!--resume-->
-    <div id="collapseResume" class="collapse bg-primary p-4">
-        <div class="card card-body bg-dark text-white mb-5">
-            <h2>My Resume</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, asperiores.</p>
+            
+        
         </div>
-        <div class="card-deck mb-5">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+        <div>
+            
+        </div>
+        <!--resume-->
+    
+        <div class="text-white h2 p-5 bg-danger collapse" id="contact">
+            <div>
+                <p class="h1">Contact Me</p> 
+                <div class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, expedita.</div>
             </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            </div>
+            <hr>
             <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                </div>
-            </div>
-        </div>   
-        <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              </div>
-            </div>
-        </div>  
-    </div>
-
-    <!--work-->
-    <div id="collapseWork" class="collapse bg-success p-4">
-        <div class="card card-body bg-dark text-white mb-5">
-            <h2>My Works</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, asperiores.</p>
-        </div>
-        <div class="row no-gutter">
-            <div class="col-md-3">
-                <a href="https://unsplash.it/1200/768.jpg?image=221" data-toggle="lightbox">
-                    <img src="https://unsplash.it/600.jpg?image=221" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="https://unsplash.it/1200/768.jpg?image=261" data-toggle="lightbox">
-                    <img src="https://unsplash.it/600.jpg?image=261" class="img-fluid">
-                </a>
-            </div>
-            
-            <div class="col-md-3">
-                <a href="https://unsplash.it/1200/768.jpg?image=259" data-toggle="lightbox">
-                    <img src="https://unsplash.it/600.jpg?image=259" class="img-fluid">
-                </a>
-            </div>
-            
-            <div class="col-md-3">
-                <a href="https://unsplash.it/1200/768.jpg?image=292" data-toggle="lightbox">
-                    <img src="https://unsplash.it/600.jpg?image=292" class="img-fluid">
-                </a>
-            </div>
-            
-        </div>
-        
-    </div>
-
-    <!--Contact-->
-    <div id="collapseContact" class="collapse bg-danger p-4">
-        <div class="card card-body bg-dark text-white mb-5">
-            <h2>My Contact</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, asperiores.</p>
-        </div>
-    
-        <div class="card card-body">
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" type="text" id="name">
-                    <label for="email">Email</label>
-                    <!-- <input type="text" class="form-control" type="text" id="email"> -->
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">@</span>
+                    <form>
+                        <div class="form-group text-primary">
+                            <label for="name" class="h5">Name</label>
+                            <input type="text" class="form-control" id="name">
                         </div>
-                        <input type="text" class="form-control">
-                    </div>
-                    <label for="message">Message</label>
-                    <textarea type="text" class="form-control mb-5" type="text" id="message"></textarea>
-                    <input type="text" class="btn btn-primary btn-block" value="Click">
+                        <div class="form-group text-primary">
+                            <label for="email" class="h5">Email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group text-primary">
+                            <label for="message" class="h5">Message</label>
+                            <textarea type="text" class="form-control" id="message"></textarea>
+                        </div>
+                        <button class="btn btn-primary btn-block">Send</button>
+                    </form>
                 </div>
-            </form>
+
+            </div>
+            
+        
         </div>
-    </div>
+
+        <div>
+            <div class="bg-dark">
+                <div class="d-flex flex-row justify-content-center">
+                        <button class="btn btn-primary text-center">Download Resume</button>
+                    
+                </div>
     
-    
-
-
-
-
-    <!--footer-->
-    <div class="bg-dark p-4">
-        <div class="row">
-            <div class="col-md-6">
-                <a href="#" class="btn btn-outline-info my-5"><i class="fas fa-cloud "></i> Download Resume</a>
             </div>
         </div>
-    </div>
+    </header>
+
     
 </div>    
-  
-  
 
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
